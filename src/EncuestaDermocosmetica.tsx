@@ -47,7 +47,7 @@ const EncuestaLaboral = () => {
         <div className="min-h-screen bg-gray-50 p-6 font-sans">
             <div className="max-w-7xl mx-auto">
                 <div className="bg-gradient-to-r from-indigo-100 to-purple-100 rounded-xl p-6 mb-6 shadow-sm border border-indigo-50 flex flex-col md:flex-row items-center gap-6">
-                    <img src="/metrics-logo.png" alt="Logo" className="h-20 w-auto rounded-lg shadow-sm mix-blend-multiply" />
+                    <img src="/metrics-logo.jpg" alt="Logo" className="h-20 w-auto rounded-lg shadow-sm mix-blend-multiply" />
                     <div>
                         <h1 className="text-4xl font-bold text-indigo-900 italic mb-2">Estudio Fybeca</h1>
                         <p className="text-indigo-700">Análisis de percepción y posicionamiento Fybeca</p>
