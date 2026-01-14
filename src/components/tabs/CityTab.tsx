@@ -209,6 +209,20 @@ export const CityTab: React.FC<CityTabProps> = ({ city, data }) => {
                                 <strong>Confianza Técnica:</strong> Aprovechar el {confianzaStats.length > 0 && confianzaStats[0].percent.toFixed(2)}% de confianza en "{confianzaStats.length > 0 ? confianzaStats[0].name : ''}" para posicionar servicios de dermo-análisis gratuitos en punto de venta.
                             </span>
                         </li>
+                        <li className="flex items-start text-sm text-gray-700">
+                            <span className="w-2 h-2 bg-orange-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
+                            <span>
+                                <strong>Estrategia de Comunicación:</strong> Activar una pieza aon en la campaña de Pricing Dermo para reforzar el mensaje de "precios más bajos" y posicionar en el TOM de los clientes el mensaje de "Fybeca tiene precios más bajos que la competencia"
+                            </span>
+                        </li>
+                        {city === 'Guayaquil' && (
+                            <li className="flex items-start text-sm text-gray-700">
+                                <span className="w-2 h-2 bg-purple-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
+                                <span>
+                                    <strong>Adaptación Cultural:</strong> Generar en las campañas de Beauty y Dermo una pieza específica adaptada al tono y códigos culturales de la región Costa.
+                                </span>
+                            </li>
+                        )}
                     </ul>
                 </div>
             </div>

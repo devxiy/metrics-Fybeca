@@ -154,10 +154,13 @@ export const AnalysisTab: React.FC<AnalysisTabProps> = ({ data }) => {
                                             <div>
                                                 <h4 className="font-bold text-green-900 text-sm uppercase mb-1">Recomendación</h4>
                                                 <p className="text-gray-700 text-sm">
-                                                    {q.field === 'percepcion_precios' && `Implementar una campaña de "Precios Justos" focalizada en Quito para equilibrar la percepción de valor.`}
+                                                    {q.field === 'percepcion_precios' && `Implementar una campaña de "Precios Justos" focalizada en Quito para equilibrar la percepción de valor. Activar una pieza aon en la campaña de Pricing Dermo para reforzar el mensaje de "precios más bajos" y posicionar en el TOM de los clientes el mensaje de "Fybeca tiene precios más bajos que la competencia"`}
                                                     {q.field === 'asociacion_fybeca' && `Reforzar la presencia de marca en ${higherCity === 'Quito' ? 'Guayaquil' : 'Quito'} mediante activaciones BTL que vinculen a Fybeca con experto en piel.`}
                                                     {q.field === 'confianza_experta' && `Capacitar al personal en ${higherCity === 'Quito' ? 'Guayaquil' : 'Quito'} para mejorar la asesoría y elevar el nivel de confianza técnica.`}
-                                                    {!['percepcion_precios', 'asociacion_fybeca', 'confianza_experta'].includes(q.field) && `Investigar a profundidad las barreras en ${higherCity === 'Quito' ? 'Guayaquil' : 'Quito'} y adaptar el mensaje publicitario para  mejorar la compresión de las campañas con la cultura local.`}
+                                                    {q.field === 'asesoria_adecuada' && ` Investigar a profundidad las barreras en Guayaquil y adaptar el mensaje publicitario para mejorar la compresión de las campañas con la cultura local.`}
+                                                    {q.field === 'descripcion_fybeca' && `Reforzar en Guayaquil el atributo de confianza con mensajes claros y consistentes.`}
+                                                    {q.field === 'aborda_problemas_reales' && `Reforzar mensajes que conecten con problemas reales de la piel, especialmente en Guayaquil.`}
+                                                    {q.field === 'comunicacion_calidad' && `Ajustar el tono y la estructura del mensaje para mejorar la comprensión en Guayaquil.`}
                                                 </p>
                                             </div>
                                         </div>
