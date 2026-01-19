@@ -226,6 +226,35 @@ export const CityTab: React.FC<CityTabProps> = ({ city, data }) => {
                     </ul>
                 </div>
             </div>
-        </div >
+
+            {city === 'Quito' && (
+                <div className="bg-white rounded-xl shadow-md p-6 border border-gray-200 mt-8 mb-8">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                        <Target className="w-5 h-5 text-gray-600" />
+                        Ficha técnica de segmentación
+                    </h3>
+                    <div className="space-y-4">
+                        <div className="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <p className="text-gray-700 leading-relaxed">
+                                <span className="font-semibold text-gray-900 block mb-1">Público Objetivo:</span>
+                                La campaña se dirigió a personas de 18 a 65 años o más, de todos los géneros, sin audiencias personalizadas incluidas.
+                            </p>
+                        </div>
+                        <div className="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <p className="text-gray-700 leading-relaxed">
+                                <span className="font-semibold text-gray-900 block mb-1">Alcance Geográfico:</span>
+                                El alcance geográfico se concentró en las ciudades de Quito y Guayaquil.
+                            </p>
+                        </div>
+                        <div className="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                            <p className="text-gray-700 leading-relaxed">
+                                <span className="font-semibold text-gray-900 block mb-1">Criterios de Segmentación:</span>
+                                La segmentación se basó en intereses relacionados con cuidado personal, salud y belleza, incluyendo skin care y cuidado natural de la piel, con el objetivo de impactar a usuarios afines a productos y contenidos de bienestar y estética.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            )}
+        </div>
     );
 };
